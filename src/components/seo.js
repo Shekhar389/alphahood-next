@@ -5,7 +5,7 @@ export default function SEO({
   description = 'startup landing descriptions',
   author = 'RedQ, Inc',
   meta,
-  title = 'startup landing title',
+  title = 'Alphahood',
 }) {
   const metaData = [
     {

@@ -33,12 +33,12 @@ export default function Header({ className }) {
             ))}
           </Flex>
           <Link path="/" sx={styles.loginBtn}>
-            <Image src={lock} alt="" />
-            Login
+            
+            
           </Link>
           <Link
             path="/"
-            label="Purchase Now"
+            label="Contact Us"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -52,7 +52,7 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    backgroundColor: '#3CC68A',
+    backgroundColor: '#182677',
     fontSize: '16px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
@@ -61,7 +61,7 @@ const styles = {
     padding: '6.5px 24px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
-    mr: ['0', null, null, '20px', '0'],
+    mr: ['0', null, null, '10px', '0'],
     transition: 'all 500ms ease',
     '&:hover': {
       color: '#fff',

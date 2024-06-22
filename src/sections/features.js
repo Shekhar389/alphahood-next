@@ -5,26 +5,26 @@ import image1 from 'assets/features-1.svg';
 import image2 from 'assets/features-2.svg';
 import image3 from 'assets/features-3.svg';
 const FEATURES_DATA = {
-  title: 'Go beyond ultimate features',
-  text: 'Ideal solutions for you',
+  title: 'Our Strength',
+  text: 'What makes us different from others?',
   posts: [
     {
       image: image3,
-      title: 'For Individuals',
+      title: 'Innovative Approach ',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'We embrace cutting-edge technologies and creative problem-solving to deliver unique IT solutions that set industry standards.',
     },
     {
       image: image2,
-      title: 'For Small Team',
+      title: 'Creative Collaboration',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Our team of experts work closely with clients to understand their needs and deliver tailored solutions that meet their business goals.',
     },
     {
       image: image1,
-      title: 'For Organization',
+      title: 'Quality Assurance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'We ensure the highest quality standards in our services, guaranteeing optimal performance, security, and user satisfaction.',
     },
   ],
 };

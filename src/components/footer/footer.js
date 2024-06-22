@@ -51,7 +51,7 @@ export default function Footer() {
       >
         <Logo />
         <Text sx={styles.copyright}>
-          &copy; Copyright by {new Date().getFullYear()} RedQ, Inc
+          &copy; Copyright by {new Date().getFullYear()} Alphahood, Inc
         </Text>
         <Box sx={styles.bottomMenu}>
           <Link path="/" label="Home" />

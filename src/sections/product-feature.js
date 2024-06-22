@@ -12,36 +12,36 @@ import feature6 from 'assets/service-6.svg';
 
 const PRODUCT_FEATURE = {
   sectionTitle: {
-    text: 'Product features',
-    title: 'Ultimate features that works',
+    text: 'Services',
+    title: 'Services We Provide',
   },
   posts: [
     {
-      label: 'Most Popular',
+      // label: 'Most Popular',
       icon: feature1,
-      title: 'Email Hosting',
+      title: 'Web Application Solutions',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Dynamic, secure web applications designed for optimal functionality and user interaction.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        label: 'Contact',
       },
     },
     {
       icon: feature2,
-      title: 'Dedicated Hosting',
+      title: 'Mobile Application Solutions',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Tailored, innovative mobile apps ensuring top-notch user experience and engagement for business growth.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        label: 'Contact',
       },
     },
     {
       icon: feature3,
-      title: 'VPS Services',
+      title: 'Application Maintainence',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Streamlined support for optimal app performance, ensuring reliability and user satisfaction with continuous updates and technical excellence.',
       button: {
         link: '#',
         label: 'Buy Now',
@@ -49,9 +49,9 @@ const PRODUCT_FEATURE = {
     },
     {
       icon: feature4,
-      title: 'WP Website Builder',
+      title: 'Digital Infrastructure Solutions',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Robust, scalable digital frameworks ensuring seamless operations, connectivity, and modernization for businesses.',
       button: {
         link: '#',
         label: 'Buy Now',
@@ -60,9 +60,9 @@ const PRODUCT_FEATURE = {
     {
       label: 'Latest',
       icon: feature5,
-      title: 'CMS Hosting',
+      title: 'UI/UX Design Solutions',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Intuitive, compelling designs that elevate user experience and engagement, tailored to your brand’s unique digital identity.',
       button: {
         link: '#',
         label: 'Buy Now',
@@ -70,9 +70,9 @@ const PRODUCT_FEATURE = {
     },
     {
       icon: feature6,
-      title: 'Cloud Hosting',
+      title: 'Digital Marketing Solutions',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress actual tests.',
+        'Strategic marketing campaigns that enhance your online presence, drive traffic, and increase conversions with measurable results.',
       button: {
         link: '#',
         label: 'Buy Now',

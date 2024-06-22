@@ -18,9 +18,9 @@ import client3 from 'assets/client-3.svg';
 import sectionImage from 'assets/banner-1.svg';
 
 const BANNER_DATA = {
-  title: 'A Creative way to grow your Exciting Business ideas',
+  title: 'Innovative IT Solutions',
   text:
-    'Get your tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever.',
+    'We embrace cutting-edge technologies and creative problem-solving to deliver unique IT solutions that set industry standards. Our team thrives on collaboration, pooling diverse ideas to forge innovative solutions that drive digital transformation.',
   clients: [
     {
       image: client1,
@@ -52,15 +52,15 @@ const Banner = () => {
               </Label>
               <Input
                 type="text"
-                placeholder="Type your domain name"
+                placeholder="Stay connected with us"
                 name="domainName"
                 id="domainName"
-              />
-              <Button>Get Started</Button>
+              /> 
+               <Button>Subscribe</Button>
             </Box>
-            <Box sx={styles.clients}>
-              <Text as="span">Our clients</Text>
-              {clients.map(({ link, image }, index) => (
+            {/*<Box sx={styles.clients}>
+              {/* <Text as="span">Our clients</Text> */}
+              {/* {clients.map(({ link, image }, index) => (
                 <Link href={link} key={`client-image-key-${index}`}>
                   <Image
                     src={image}
@@ -69,8 +69,8 @@ const Banner = () => {
                     alt="client image"
                   />
                 </Link>
-              ))}
-            </Box>
+              ))} 
+            </Box>*/}
           </Box>
           <Box sx={styles.images}>
             <Image src={image} width="740" height="558" alt="section image" />
