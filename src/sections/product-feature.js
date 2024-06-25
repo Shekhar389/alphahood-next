@@ -24,7 +24,7 @@ const PRODUCT_FEATURE = {
         'Dynamic, secure web applications designed for optimal functionality and user interaction.',
       button: {
         link: '#',
-        label: 'Contact',
+        // label: 'Contact',
       },
     },
     {
@@ -34,7 +34,7 @@ const PRODUCT_FEATURE = {
         'Tailored, innovative mobile apps ensuring top-notch user experience and engagement for business growth.',
       button: {
         link: '#',
-        label: 'Contact',
+        // label: 'Contact',
       },
     },
     {
@@ -44,7 +44,7 @@ const PRODUCT_FEATURE = {
         'Streamlined support for optimal app performance, ensuring reliability and user satisfaction with continuous updates and technical excellence.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        // label: 'Contact',
       },
     },
     {
@@ -54,18 +54,18 @@ const PRODUCT_FEATURE = {
         'Robust, scalable digital frameworks ensuring seamless operations, connectivity, and modernization for businesses.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        // label: 'Contact',
       },
     },
     {
-      label: 'Latest',
+      // label: 'Latest',
       icon: feature5,
       title: 'UI/UX Design Solutions',
       text:
         'Intuitive, compelling designs that elevate user experience and engagement, tailored to your brand’s unique digital identity.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        // label: 'Contact',
       },
     },
     {
@@ -75,7 +75,7 @@ const PRODUCT_FEATURE = {
         'Strategic marketing campaigns that enhance your online presence, drive traffic, and increase conversions with measurable results.',
       button: {
         link: '#',
-        label: 'Buy Now',
+        // label: 'Contact',
       },
     },
   ],
@@ -102,7 +102,7 @@ const ProductFeature = () => {
                 <Text as="p">{text}</Text>
                 <Link href={button.link}>
                   {button.label}
-                  <IoIosArrowForward />
+                  {/* <IoIosArrowForward /> */}
                 </Link>
               </Box>
             </Box>

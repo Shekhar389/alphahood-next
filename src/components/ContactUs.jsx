@@ -1,5 +1,36 @@
 import React from "react";
 
+const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+  return (
+    <>
+      <div className="mb-6">
+        <textarea
+          rows={row}
+          placeholder={placeholder}
+          name={name}
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          defaultValue={defaultValue}
+        />
+      </div>
+    </>
+  );
+};
+
+const ContactInputBox = ({ type, placeholder, name }) => {
+  return (
+    <>
+      <div className="mb-6">
+        <input
+          type={type}
+          placeholder={placeholder}
+          name={name}
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        />
+      </div>
+    </>
+  );
+};
+
 const Contact = () => {
   return (
     <>
@@ -156,33 +187,3 @@ const Contact = () => {
 
 export default Contact;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
-
-const ContactInputBox = ({ type, placeholder, name }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        />
-      </div>
-    </>
-  );
-};
