@@ -11,6 +11,8 @@ import 'react-modal-video/css/modal-video.min.css';
 import 'typeface-bree-serif';
 import 'typeface-dm-sans';
 
+import "../style/global.css"
+
 export default function CustomApp({ Component, pageProps }) {
   /** 
    useEffect(() => {
