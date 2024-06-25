@@ -4,6 +4,7 @@ import { jsx, Heading, Box, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
 import menuItems from './footer.data';
+import { margin } from 'polished';
 export default function Footer() {
   return (
     <footer
@@ -16,7 +17,7 @@ export default function Footer() {
           variant: 'layout.toolbar',
           alignItems: 'stretch',
           flexWrap: 'wrap',
-          pt: ['30px', null, null, null, '70px'],
+          pt: ['30px', null, null, null, '90px'],
           pb: ['60px', null, null, null, '90px'],
           borderBottom: '1px solid #D9E0E7',
         }}
@@ -93,6 +94,7 @@ const styles = {
   bottomMenu: {
     display: 'flex',
     marginLeft: [0, null, null, null, 'auto'],
+    marginRight: [0, null, null, null, 'auto'],
     mt: ['10px', null, null, null, 0],
     flexWrap: 'wrap',
     justifyContent: 'center',

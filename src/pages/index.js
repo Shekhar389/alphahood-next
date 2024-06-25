@@ -14,6 +14,7 @@ import Services from 'sections/services';
 import ProductFeature from 'sections/product-feature';
 import CustomerSupport from 'sections/customer-support';
 import Testimonials from 'sections/testimonials';
+import Contact from 'components/ContactUs';
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
@@ -34,7 +35,7 @@ export default function IndexPage() {
           <Video />
           <FaqTwo />
           {/* <Testimonials /> */}
-          
+          <Contact/>
         </Layout>
       </StickyProvider>
     </ThemeProvider>

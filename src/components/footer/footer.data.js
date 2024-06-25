@@ -6,10 +6,10 @@ export default [
         path: '/',
         label: 'About',
       },
-      {
-        path: '/',
-        label: 'Affiliate',
-      },
+      // {
+      //   path: '/',
+      //   label: 'Affiliate',
+      // },
       {
         path: '/',
         label: 'Careers & Culture    ',
@@ -18,10 +18,10 @@ export default [
         path: '/',
         label: 'Blog',
       },
-      {
-        path: '/',
-        label: 'Press',
-      },
+      // {
+      //   path: '/',
+      //   label: 'Press',
+      // },
     ],
   },
   {
@@ -39,23 +39,23 @@ export default [
         path: '/',
         label: 'About Us',
       },
-      {
-        path: '/',
-        label: 'Copyright',
-      },
-      {
-        path: '/',
-        label: 'Popular Campaign',
-      },
+      // {
+      //   path: '/',
+      //   label: 'Copyright',
+      // },
+      // {
+      //   path: '/',
+      //   label: 'Popular Campaign',
+      // },
     ],
   },
   {
     header: 'Our Information',
     items: [
-      {
-        path: '/',
-        label: 'Return Policy ',
-      },
+      // {
+      //   path: '/',
+      //   label: 'Return Policy ',
+      // },
       {
         path: '/',
         label: 'Privacy Policy',
@@ -64,60 +64,56 @@ export default [
         path: '/',
         label: 'Terms & Conditions',
       },
-      {
-        path: '/',
-        label: 'Site Map',
-      },
-      {
-        path: '/',
-        label: 'Store Hours',
-      },
+      // {
+      //   path: '/',
+      //   label: 'Site Map',
+      // },
+      // {
+      //   path: '/',
+      //   label: 'Store Hours',
+      // },
     ],
   },
   {
-    header: 'My Account',
+    header: 'Contact',
     items: [
       {
         path: '/',
-        label: 'Press inquiries',
+        label: 'Noida Sector 62 , Uttar Pradesh',
+      },
+      // {
+      //   path: '/',
+      //   label: 'LinkedIn',
+      // },
+      {
+        path: '/',
+        label: '+91 9005404049',
       },
       {
         path: '/',
-        label: 'Social media ',
-      },
-      {
-        path: '/',
-        label: 'directories',
-      },
-      {
-        path: '/',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '/',
-        label: 'Permissions',
+        label: 'alphahoodtechnlogies@gmail.com',
       },
     ],
   },
-  {
-    header: 'Policy',
-    items: [
-      {
-        path: '/',
-        label: 'Application security',
-      },
-      {
-        path: '/',
-        label: 'Software principles',
-      },
-      {
-        path: '/',
-        label: 'Unwanted software policy',
-      },
-      {
-        path: '/',
-        label: 'Responsible supply chain',
-      },
-    ],
-  },
+  // {
+  //   header: 'Policy',
+  //   items: [
+  //     {
+  //       path: '/',
+  //       label: 'Application security',
+  //     },
+  //     {
+  //       path: '/',
+  //       label: 'Software principles',
+  //     },
+  //     {
+  //       path: '/',
+  //       label: 'Unwanted software policy',
+  //     },
+  //     {
+  //       path: '/',
+  //       label: 'Responsible supply chain',
+  //     },
+  //   ],
+  // },
 ];
