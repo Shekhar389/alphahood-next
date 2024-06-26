@@ -34,7 +34,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
 const Contact = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
+      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[0px] lg:mx-[200px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -66,7 +66,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-dark">
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
@@ -168,7 +168,7 @@ const Contact = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-blue-900 hover:text-white"
                     >
                       Send Message
                     </button>
