@@ -17,6 +17,7 @@ export default function Footer() {
           variant: 'layout.toolbar',
           alignItems: 'stretch',
           flexWrap: 'wrap',
+          
           pt: ['30px', null, null, null, '90px'],
           pb: ['60px', null, null, null, '90px'],
           borderBottom: '1px solid #D9E0E7',
@@ -47,20 +48,20 @@ export default function Footer() {
         sx={{
           variant: 'layout.toolbar',
           flexDirection: ['column', null, null, null, 'row'],
-          py: '40px',
+          py: '40px'
         }}
       >
         <Logo />
         <Text sx={styles.copyright}>
           &copy; Copyright by {new Date().getFullYear()} Alphahood, Inc
         </Text>
-        <Box sx={styles.bottomMenu}>
+        {/* <Box sx={styles.bottomMenu}>
           <Link path="/" label="Home" />
           <Link path="/" label="Advertise" />
           <Link path="/" label="Supports" />
           <Link path="/" label="Marketing" />
           <Link path="/" label="FAQ" />
-        </Box>
+        </Box> */}
       </Container>
     </footer>
   );

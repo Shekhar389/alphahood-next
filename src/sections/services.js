@@ -6,36 +6,36 @@ import ServiceCard from 'components/service-card';
 
 const services = [
   {
-    title: 'Cloud Hosting',
+    title: 'Cloud Solutions',
     price: 0.63,
   },
   {
-    title: 'Web Hosting',
+    title: 'Devops Solution',
     price: 0.75,
   },
   {
-    title: 'VPS Hosting',
+    title: 'AI Solutions',
     price: 0.68,
   },
   {
-    title: 'Wordpress Hosting',
+    title: 'Storage Solutions',
     price: 0.72,
   },
   {
-    title: 'Domains',
+    title: 'Developer Teams',
     price: 0.63,
   },
   {
-    title: 'Email Hosting',
+    title: 'Design Solutions',
     price: 0.56,
   },
   {
-    title: 'VPN Service',
+    title: 'Database Solutions',
     price: 0.69,
   },
   {
-    title: 'Image Cloud',
-    price: 0.75,
+    title: 'Marketing Solutions',
+    price: "",
   },
 ];
 

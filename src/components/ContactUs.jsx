@@ -46,9 +46,9 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                Our support team is available 24/7 to help you with any issues you
+              may have. You can reach us by phone or email, and we will respond
+              to your inquiry as soon as possible.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -70,7 +70,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      Bharat Nagar, Lucknow, UP, India
                     </p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+91) 9005404049
                     </p>
                   </div>
                 </div>
@@ -135,7 +135,11 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      connect@alphahoodtech,com
+                    </p>
+
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      alphahoodtechnologies@gmail.com
                     </p>
                   </div>
                 </div>

@@ -14,11 +14,11 @@ export default [
     label: 'Services',
     offset: -40,
   },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-    offset: -70,
-  },
+  // {
+  //   path: 'pricing',
+  //   label: 'Pricing',
+  //   offset: -70,
+  // },
   {
     path: 'support',
     label: 'Support',

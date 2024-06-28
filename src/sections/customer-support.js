@@ -6,10 +6,10 @@ import { IoIosCheckmarkCircle } from 'react-icons/io';
 import support from 'assets/support.png';
 
 const list = [
-  'Medical and vision',
-  'Life insurance',
-  'HSAs and FSAs',
-  'Commuter benefits',
+  'Collaborative support',
+  'Community support',
+  '24/7 Availability',
+  'Customer satisfaction',
 ];
 
 const CustomerSupport = () => {
@@ -29,9 +29,9 @@ const CustomerSupport = () => {
               satisfaction.
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              Our support team is available 24/7 to help you with any issues you
+              may have. You can reach us by phone or email, and we will respond
+              to your inquiry as soon as possible.
             </Text>
 
             <Grid sx={styles.list} as="ul">

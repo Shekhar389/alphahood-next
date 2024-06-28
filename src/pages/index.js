@@ -32,7 +32,7 @@ export default function IndexPage() {
           {/* <Pricing /> */}
           
           <CustomerSupport />
-          <Video />
+          {/* <Video /> */}
           <FaqTwo />
           {/* <Testimonials /> */}
           <Contact/>
