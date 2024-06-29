@@ -1,37 +1,118 @@
 import React from "react";
-
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+import { useState } from "react";
+import axios from "axios";
+const ContactTextArea = ({ rows, placeholder, name, value, onChange }) => {
   return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
+    <div className="mb-6">
+      <textarea
+        rows={rows}
+        placeholder={placeholder}
+        name={name}
+        value={value} // Use value prop to make it a controlled component
+        onChange={onChange} // Handle input change
+        className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+      />
+    </div>
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
   return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        />
-      </div>
-    </>
+    <div className="mb-6">
+      <input
+        type={type}
+        placeholder={placeholder}
+        name={name}
+        value={value} // Use value prop to make it a controlled component
+        onChange={onChange} // Handle input change
+        className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+      />
+    </div>
   );
 };
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      phone: '',
+      details: ''
+    });
+  
+    const [formErrors, setFormErrors] = useState({
+      name: '',
+      email: ''
+    });
+  
+    const handleInputChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+      // Reset the error message when user starts typing again
+      setFormErrors({
+        ...formErrors,
+        [name]: ''
+      });
+    };
+  
+    const validateForm = () => {
+      let valid = true;
+      const errors = {};
+    
+      if (!formData.name.trim()) {
+        errors.name = 'Name is required';
+        valid = false;
+      }
+    
+      if (!formData.email.trim()) {
+        errors.email = 'Email is required';
+        valid = false;
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        errors.email = 'Email is invalid';
+        valid = false;
+      }
+    
+      if (!formData.phone.trim()) {
+        errors.phone = 'Phone number is required';
+        valid = false;
+      } else if (!/^\d{10,}$/.test(formData.phone)) {
+        errors.phone = 'Phone number must be at least 10 digits';
+        valid = false;
+      }
+      
+      if (!formData.details.trim()) {
+        errors.details = 'Message is required';
+        valid = false;
+      }
+      setFormErrors(errors);
+      return valid;
+    };
+    
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      if (validateForm()) {
+        // Form is valid, proceed with submission
+        const response = await axios.post('http://35.154.170.188:8080/contact', formData);
+        if (response.status !== 200) {
+          alert('Failed to submit the form. Please try again later.');
+        }
+        else{
+          alert('Form submitted successfully');
+        }
+        console.log(formData); // Log form data to the console
+        // Additional logic can be added here, like sending the data to a server
+      } else {
+        // Form validation failed, handle errors or display messages
+        console.log("Form validation failed");
+        // You can add logic here to display errors to the user
+      }
+    };
+  
+
   return (
     <>
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[0px] lg:mx-[200px]">
@@ -147,37 +228,64 @@ const Contact = () => {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
-                  <ContactInputBox
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="phone"
-                    placeholder="Your Phone"
-                  />
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-blue-900 hover:text-white"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+              <form onSubmit={handleSubmit}>
+      <div className="mb-6">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className={`w-full rounded border ${formErrors.name ? 'border-red-500' : 'border-stroke'} px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6`}
+        />
+        {formErrors.name && <p className="text-red-500 mt-1 text-sm">{formErrors.name}</p>}
+      </div>
+
+      <div className="mb-6">
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleInputChange}
+          className={`w-full rounded border ${formErrors.email ? 'border-red-500' : 'border-stroke'} px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6`}
+        />
+        {formErrors.email && <p className="text-red-500 mt-1 text-sm">{formErrors.email}</p>}
+      </div>
+
+      <div className="mb-6">
+        <input
+          type="text"
+          name="phone"
+          placeholder="Your Phone"
+          value={formData.phone}
+          onChange={handleInputChange}
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        />
+        {formErrors.phone && <p className="text-red-500 mt-1 text-sm">{formErrors.phone}</p>}
+      </div>
+
+      <div className="mb-6">
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          name="details"
+          value={formData.details}
+          onChange={handleInputChange}
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        />
+        {formErrors.details && <p className="text-red-500 mt-1 text-sm">{formErrors.details}</p>}
+      </div>
+
+      <div>
+        <button
+          type="submit"
+          className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-blue-900 hover:text-white"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
                 <div>
                 </div>
               </div>
