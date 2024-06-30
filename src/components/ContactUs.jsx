@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
@@ -97,7 +98,8 @@ const Contact = () => {
       if (validateForm()) {
         // Form is valid, proceed with submission
         const response = await axios.post('http://35.154.170.188:8080/contact', formData);
-        if (response.status !== 200) {
+        console.log(response);
+        if (response.status!== 200) {
           alert('Failed to submit the form. Please try again later.');
         }
         else{
