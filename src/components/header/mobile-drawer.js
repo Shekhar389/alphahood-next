@@ -51,11 +51,11 @@ const MobileDrawer = () => {
             ))}
           </Box>
 
-          <Box sx={styles.menuFooter}>
+          {/* <Box sx={styles.menuFooter}>
             <Button variant="primary" sx={styles.button}>
               Purchase Now
             </Button>
-          </Box>
+          </Box> */}
         </Box>
       </Scrollbars>
     </Drawer>

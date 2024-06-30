@@ -1,6 +1,8 @@
 
 import React from "react";
 import { useState } from "react";
+import { Box } from 'theme-ui';
+
 import axios from "axios";
 const ContactTextArea = ({ rows, placeholder, name, value, onChange }) => {
   return (
@@ -116,7 +118,7 @@ const Contact = () => {
   
 
   return (
-    <>
+    <Box as="section" id="services">
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[0px] lg:mx-[200px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -298,7 +300,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
+    </Box>
   );
 };
 

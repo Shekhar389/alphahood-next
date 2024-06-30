@@ -24,4 +24,9 @@ export default [
     label: 'Support',
     offset: -70,
   },
+  {
+    path: 'contact',
+    label: 'Contact',
+    offset: -100,
+  },
 ];
