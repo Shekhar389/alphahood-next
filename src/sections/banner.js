@@ -46,7 +46,7 @@ const Banner = () => {
           <Box sx={styles.content}>
             <Heading as="h2">{title}</Heading>
             <Text as="p">{text}</Text>
-            <Box as="form">
+            {/* <Box as="form">
               <Label variant="styles.srOnly" htmlFor="domainName">
                 Domain Name
               </Label>
@@ -57,7 +57,7 @@ const Banner = () => {
                 id="domainName"
               /> 
                <Button>Subscribe</Button>
-            </Box>
+            </Box> */}
             {/*<Box sx={styles.clients}>
               {/* <Text as="span">Our clients</Text> */}
               {/* {clients.map(({ link, image }, index) => (
@@ -73,7 +73,7 @@ const Banner = () => {
             </Box>*/}
           </Box>
           <Box sx={styles.images}>
-            <Image src={image} width="740" height="558" alt="section image" />
+            <Image src={image} width="740" height="400" alt="section image" />
           </Box>
         </Flex>
       </Container>

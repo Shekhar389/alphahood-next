@@ -79,7 +79,7 @@ export default [
     items: [
       {
         path: '/',
-        label: 'Noida Sector 62 , Uttar Pradesh',
+        label: 'Bharat Nagar, Lucknow, Uttar Pradesh',
       },
       // {
       //   path: '/',
@@ -91,7 +91,11 @@ export default [
       },
       {
         path: '/',
-        label: 'alphahoodtechnlogies@gmail.com',
+        label: 'alphahoodtech@gmail.com',
+      },
+      {
+        path: '/',
+        label: 'sales@alphahoodtech.com',
       },
     ],
   },

@@ -195,6 +195,9 @@ const Contact = () => {
                     <p className="text-base text-body-color dark:text-dark-6">
                       (+91) 9005404049
                     </p>
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      (+91) 7428410709
+                    </p>
                   </div>
                 </div>
 
@@ -218,11 +221,11 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      connect@alphahoodtech,com
+                      connect@alphahoodtech.com
                     </p>
 
                     <p className="text-base text-body-color dark:text-dark-6">
-                      alphahoodtechnologies@gmail.com
+                      sales@alphahoodtech.com
                     </p>
                   </div>
                 </div>
