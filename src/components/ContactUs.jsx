@@ -99,7 +99,7 @@ const Contact = () => {
   
       if (validateForm()) {
         // Form is valid, proceed with submission
-        const response = await axios.post('http://35.154.170.188:8080/contact', formData);
+        const response = await axios.post('https://backend.alphahoodtech.com/contact', formData);
         console.log(response);
         if (response.status!== 200) {
           alert('Failed to submit the form. Please try again later.');
